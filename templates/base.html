@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('courses') }}">Courses</a></li>
+            <li><a href="{{ url_for('instructors') }}">Instructors</a></li>
+            <li><a href="{{ url_for('lectures') }}">Lectures</a></li>
+            <li><a href="{{ url_for('add_course') }}">Add Course</a></li>
+            <li><a href="{{ url_for('add_instructor') }}">Add Instructor</a></li>
+            <li><a href="{{ url_for('add_lecture') }}">Add Lecture</a></li>
+        </ul>
+    </nav>
+    <div>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

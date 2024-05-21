@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Lectures</h1>
+<ul>
+    {% for lecture in lectures %}
+    <li>{{ lecture.course.name }} by {{ lecture.instructor.name }} on {{ lecture.date }} at {{ lecture.time }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

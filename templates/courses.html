@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Courses</h1>
+<ul>
+    {% for course in courses %}
+    <li>{{ course.name }} ({{ course.level }}) - {{ course.description }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
